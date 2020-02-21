@@ -1,5 +1,8 @@
 const mongoose = require('mongoose');
 
+/**
+ * Represents a team member stored in the database.
+ */
 const MemberSchema = new mongoose.Schema({
     name: {
         type: String, 

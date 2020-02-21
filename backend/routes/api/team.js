@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const Member = require('../../models/TeamMember');
+const Member = require('../../models/teamMember');
 
 router.get('', (req, res) => {
     Member.find()
@@ -34,6 +34,5 @@ router.delete('/:id', (req, res) => {
     .then(member => res.json({ msg: 'Member deleted successfully'}))
     .catch(err => res.status(400).json({ error: 'No team member' }))
 });
-
 
 module.exports = router;

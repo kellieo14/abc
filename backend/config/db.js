@@ -10,6 +10,7 @@ const connectDB = async () => {
                 useNewUrlParser: true,
                 useFindAndModify: false,
                 useCreateIndex: true,
+                useUnifiedTopology: true,
             }
         );
         console.log('mLab is connected...');
